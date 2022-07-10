@@ -1,0 +1,20 @@
+<div style="text-align: center;">
+        
+        <h2>{{tituloPagina}}</h2>
+        <br>
+        <p>Esse é o meu parágrafo com <strong>o texto em negrito</strong> </p>
+        
+{{#if listaAnimais}}
+<ul>
+        {{#each listaAnimais}}
+                <li>
+                        Nome:{{nome_animal}} - Raça {{ tipo_animal }} <br>
+                        <a href="/editar-animal?id={{cod_animal}}">Editar | </a>
+                        <a href="/excluir-animal?id={{cod_animal}}">Excluir</a>
+                </li>
+        {{/each}}
+</ul>
+{{else}}
+        <p>Não há produtos cadastrados para serem exibidos!</p>
+{{/if}}
+</div>

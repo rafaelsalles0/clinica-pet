@@ -1,0 +1,31 @@
+<h1>Editar Animal</h1>
+
+{{#if mensagem}}
+    <p style="color: {{ cor }};">
+        {{mensagem}}
+    </p>
+{{/if}}
+
+<form method="POST" action="editar-animal">
+    <p>
+        <input type="hidden" name="cod_animal" value="{{ cod_animal }}">
+    </p>
+    <p>
+        <label>Nome do animal</label>
+        <input type="text" name="nome" value="{{ nome }}">
+    </p>
+    <p>
+        <label>Tipo do animal</label>
+        <input type="text" name="tipo" value="{{ tipo }}">
+    </p>
+    <p>
+        <label>Raça do animal</label>
+        <input type="text" name="raca" value="{{ raca }}">
+    </p>
+    <p>
+        <button type="submit">
+            Salvar
+        </button>
+        <input type="hidden" name="id" value="{{id}}">
+    </p>
+</form>

@@ -1,0 +1,31 @@
+<h2>Contato</h2>
+{{#if dadosValidos}}
+    <div>
+        <strong>Nome: </strong> {{ nome }} <br>
+        <strong>Email: </strong> {{ email }} <br>
+        <strong>Idade: </strong> {{ idade }} <br>
+    </div>
+{{else}}
+    <div style="color: red;">
+        {{ mensagemErro }}
+    </div>
+{{/if}}
+
+<form method="post" action="/contato">
+
+    <p>
+        nome: <br>
+        <input type="text" name="nome" value="" />
+    </p>
+    <p>
+        E-mail: <br>
+        <input type="e-mail" name="email" value="" />
+    </p>
+    <p>
+        Idade: <br>
+        <input type="number" name="idade" value="" />
+    </p>
+    <button>
+        Enviar
+    </button>
+</form>

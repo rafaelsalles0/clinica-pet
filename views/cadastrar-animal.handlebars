@@ -1,0 +1,25 @@
+<h1>Cadastrar Animal</h1>
+
+{{#if mensagem}}
+<p style="color: {{ cor }};">
+    {{mensagem}}
+</p>
+{{/if}}
+
+<form method="POST" action="cadastrar-animal">
+    <p>
+        <label>Nome do animal</label>
+        <input type="text" name="nome" value="{{ nome }}">
+    </p>
+    <p>
+        <label>Tipo do animal</label>
+        <input type="text" name="tipo" value="{{ tipo }}">
+    </p>
+    <p>
+        <label>Raça do animal</label>
+        <input type="text" name="raca" value="{{ raca }}">
+    </p>
+    <button type="submit">
+        Cadastrar
+    </button>
+</form>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>{{tituloPagina}}</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+
+    <body>
+
+        <header>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contato">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cadastrar-animal">Cadastro</a>
+          </li>
+          <li>
+            <a href="/logout" class="btn btn-danger btn-lg position-absolute btn-logout">Logout</a>
+          </li>
+        </ul>
+        </header>    
+        <!--
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/sobre">Sobre</a></li>
+                <li><a href="/contato">Contato</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/cadastrar-animal">Cadastro</a></li>
+            </ul>
+        </nav>
+        -->
+        
+        {{{body}}}
+
+        <footer>
+            <!--<p>Este é o rodapé!</p>-->
+        </footer>
+        <style>
+          html{
+            background: fixed url('../img/background-pet.jpg');
+            position:relative;
+          }
+          body {
+              background-color: transparent !important;
+          }
+        </style>
+
+    </body>
+
+
+
+</html>
